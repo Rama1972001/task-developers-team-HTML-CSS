@@ -6,71 +6,85 @@
     <title>Signup Form</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/5e9d5b19a5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <form action="https://formspree.io/f/xzbwbadr" method="POST">
-        <fieldset>
-            <i class="fa fa-close icon " id="close"></i>
-
-
-            <p>Add members to front-end development team:</p>
-            <form action="https://formspree.io/f/xzbwbadr" method="POST">
-
-
-
-
-                <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <form class="form2" action="https://formspree.io/f/xzbwbadr" method="POST">
+        <div>
+            <div class="close">
+                <button type="button">
+            <i class="fa-duotone fa-x font"></i>
+            <i class="ESC">ESC</i>
+            </button>
+            </div>
+            <div class="parag">
+                <p>Add members to front-end development team:</p>
+            </div>
+        </div>
+        <div class="parent">
+            <div class="search">
                 <input type="text" placeholder="&#xF002; find members.." id="search" style="font-family:Arial, FontAwesome" /><br>
-                <div class="round">
-                    <fieldset id="box">
-                        <i class="fa fa-user icon"><label class="memb" for="mem1"  >  Rama Abdlrahman </label></i>
-                        <input type="checkbox" id="mem" class="f" name="mem1" value="person"><br>
-                    </fieldset>
+            </div>
+            <div class="box">
+                <input type="checkbox" id="mem1" class="f" name="group" value="Rama Abdlrahman">
+                <label class="memb" for="mem1"> <i class="fa fa-user icon"></i> Rama Abdlrahman </label>
+            </div>
 
-                    <fieldset id="box">
+            <div class="box">
 
-                        <i class="fa fa-user icon"><label class="memb" for="mem2" >  Yazan Tahhan
-    </label></i>
-                        <input type="checkbox" id="mem" class="f" name="mem2" value="person"><br>
-                    </fieldset>
-                    <fieldset id="box">
-                        <i class="fa fa-user icon"><label class="memb" for="mem3" > Zaid Zaidan </label></i>
-                        <input type="checkbox" id="mem" class="f" name="mem3" value="person"><br>
-                    </fieldset>
+                <input type="checkbox" id="mem2" class="f" name="group" value="Yazan Tahhan">
+                <label class="memb" for="mem2"> <i class="fa fa-user icon"></i> Yazan Tahhan </label>
+            </div>
 
-                    <fieldset id="box">
-                        <i class="fa fa-user icon"><label class="memb" for="mem4" >  Abdallatif Sulaiman
-    </label></i>
-                        <input type="checkbox" id="mem" class="f" name="mem4" value="person"><br>
-                    </fieldset>
-                    <fieldset id="box">
-                        <i class="fa fa-user icon"><label class="memb" for="mem5" > Fatima Imad
-    </label></i>
-                        <input type="checkbox" id="mem" class="f" name="mem5" value="person"><br>
-                    </fieldset>
+            <div class="box">
 
-                    <fieldset id="box">
-                        <i class="fa fa-user icon"><label class="memb" for="mem6" > raihan rasheed </label></i>
-                        <input type="checkbox" id="mem" class="f" name="mem6" value="person"><br>
-                    </fieldset>
 
-                    <fieldset id="box">
-                        <i class="fa fa-user icon"><label class="memb" for="mem7" >  Nidaa </label></i>
-                        <input type="checkbox" id="mem" class="f" name="mem7" value="person"><br>
-                    </fieldset>
-                    <fieldset class="end">
+                <input type="checkbox" id="mem3" class="f" name="group" value="Zaid Zaidan ">
+                <label class="memb" for="mem3"> <i class="fa fa-user icon"></i> Zaid Zaidan </label>
 
-                        <!-- since there is no cancel button in html , and I have to writ javascript function to do that , I decided to use reset button-->
-                        <button type="reset" id="r" value="Reset">Cancel</button>
-                        <button type="submit" id="s" value="Submit">Save</button>
+            </div>
 
-                    </fieldset>
 
-                </div>
-            </form>
-        </fieldset>
 
+
+            <div class="box">
+                <input type="checkbox" id="mem4" class="f" name="group" value="Abdallatif Sulaiman ">
+                <label class="memb" for="mem4"> <i class="fa fa-user icon"></i> Abdallatif Sulaiman </label>
+            </div>
+
+
+
+            <div class="box">
+
+
+                <input type="checkbox" id="mem5" class="f" name="group" value="Fatima Imad">
+                <label class="memb" for="mem5"> <i class="fa fa-user icon"></i> Fatima Imad </label>
+
+            </div>
+
+
+            <div class="box">
+
+                <input type="checkbox" id="mem6" class="f" name="group" value="raihan rasheed ">
+                <label class="memb" for="mem6"> <i class="fa fa-user icon"></i> raihan rasheed  </label>
+
+            </div>
+
+            <div class="box">
+
+                <input type="checkbox" id="mem7" class="f" name="group" value="Nidaa ">
+                <label class="memb" for="mem7"> <i class="fa fa-user icon"></i> Nidaa  </label>
+            </div>
+
+
+            <div class="end">
+                <!-- since there is no cancel button in html , and I have to writ javascript function to do that , I decided to use reset button-->
+                <button type="reset" id="r" value="Reset">Cancel</button>
+                <button type="submit" id="s" value="Submit">Save</button>
+            </div>
+        </div>
+    </form>
 </body>
 
 </html>
